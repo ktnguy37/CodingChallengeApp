@@ -35,3 +35,4 @@ extension LocationManager: CLLocationManagerDelegate {
         }
     }
 }
+

@@ -24,6 +24,8 @@ struct MapView: View {
                 .onAppear(perform: {
                     setCurrentLocation()
                 })
+        } else {
+            Map(coordinateRegion: $region)
         }
     }
 }
@@ -33,3 +35,5 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+
+

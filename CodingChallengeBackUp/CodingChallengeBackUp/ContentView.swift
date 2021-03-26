@@ -9,10 +9,14 @@ import SwiftUI
 import MapKit
 struct ContentView: View {
     var body: some View {
-        MapView()
-            .ignoresSafeArea(.keyboard, edges: .top)
-            .frame(height:300)
-            .onAppear()
+        VStack {
+//            MapView()
+//                .ignoresSafeArea(.keyboard, edges: .top)
+//                .frame(height:300)
+            FormView()
+            
+        }
+       
     }
 }
 
@@ -21,3 +25,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

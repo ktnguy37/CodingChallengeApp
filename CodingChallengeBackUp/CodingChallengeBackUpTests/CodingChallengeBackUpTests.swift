@@ -1,14 +1,14 @@
 //
-//  CodingChallengeTests.swift
-//  CodingChallengeTests
+//  CodingChallengeBackUpTests.swift
+//  CodingChallengeBackUpTests
 //
-//  Created by Khang Nguyen on 3/17/21.
+//  Created by Khang Nguyen on 3/21/21.
 //
 
 import XCTest
-@testable import CodingChallenge
+@testable import CodingChallengeBackUp
 
-class CodingChallengeTests: XCTestCase {
+class CodingChallengeBackUpTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
