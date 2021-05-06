@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7D95C226101353005E0235 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D95C126101353005E0235 /* CircleImageView.swift */; };
+		1B7D95C826101B10005E0235 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7D95C726101B10005E0235 /* iPhoneNumberField */; };
+		1B7D95D32612A2E9005E0235 /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */; };
+		1B9CD2AE2643E1FC00D277F2 /* userList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CD2AD2643E1FC00D277F2 /* userList.swift */; };
 		89E2728726073797001B6582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728626073797001B6582 /* AppDelegate.swift */; };
 		89E2728926073797001B6582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728826073797001B6582 /* SceneDelegate.swift */; };
 		89E2728E26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728C26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld */; };
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B7D95C126101353005E0235 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButtonView.swift; sourceTree = "<group>"; };
+		1B9CD2AD2643E1FC00D277F2 /* userList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userList.swift; sourceTree = "<group>"; };
 		89E2728326073797001B6582 /* CodingChallengeBackUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeBackUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E2728626073797001B6582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E2728826073797001B6582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7D95C826101B10005E0235 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +121,7 @@
 		89E2728526073797001B6582 /* CodingChallengeBackUp */ = {
 			isa = PBXGroup;
 			children = (
+				1B9CD2AD2643E1FC00D277F2 /* userList.swift */,
 				89E2728626073797001B6582 /* AppDelegate.swift */,
 				89E2728826073797001B6582 /* SceneDelegate.swift */,
 				89E2728F26073799001B6582 /* Assets.xcassets */,
@@ -127,6 +136,8 @@
 				89E272E126091DBE001B6582 /* FormView.swift */,
 				89E272EC26097311001B6582 /* UserModel.swift */,
 				89E272F1260A9174001B6582 /* ProfileView.swift */,
+				1B7D95C126101353005E0235 /* CircleImageView.swift */,
+				1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */,
 			);
 			path = CodingChallengeBackUp;
 			sourceTree = "<group>";
@@ -173,6 +184,9 @@
 			dependencies = (
 			);
 			name = CodingChallengeBackUp;
+			packageProductDependencies = (
+				1B7D95C726101B10005E0235 /* iPhoneNumberField */,
+			);
 			productName = CodingChallengeBackUp;
 			productReference = 89E2728326073797001B6582 /* CodingChallengeBackUp.app */;
 			productType = "com.apple.product-type.application";
@@ -236,7 +250,7 @@
 				};
 			};
 			buildConfigurationList = 89E2727E26073797001B6582 /* Build configuration list for PBXProject "CodingChallengeBackUp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -244,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 89E2727A26073797001B6582;
+			packageReferences = (
+				1B7D95C626101B10005E0235 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = 89E2728426073797001B6582 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,10 +309,13 @@
 				89E272F2260A9174001B6582 /* ProfileView.swift in Sources */,
 				89E2728726073797001B6582 /* AppDelegate.swift in Sources */,
 				89E272DD26091CE4001B6582 /* ContentView.swift in Sources */,
+				1B7D95C226101353005E0235 /* CircleImageView.swift in Sources */,
 				89E2728926073797001B6582 /* SceneDelegate.swift in Sources */,
 				89E272C72607380D001B6582 /* LocationManager.swift in Sources */,
 				89E2728E26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld in Sources */,
+				1B7D95D32612A2E9005E0235 /* CameraButtonView.swift in Sources */,
 				89E272ED26097311001B6582 /* UserModel.swift in Sources */,
+				1B9CD2AE2643E1FC00D277F2 /* userList.swift in Sources */,
 				89E272C2260737CF001B6582 /* MKCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B7D95C626101B10005E0235 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B7D95C726101B10005E0235 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B7D95C626101B10005E0235 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		89E2728C26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld */ = {

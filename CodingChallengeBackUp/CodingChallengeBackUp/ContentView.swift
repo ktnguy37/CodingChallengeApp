@@ -8,15 +8,13 @@
 import SwiftUI
 import MapKit
 struct ContentView: View {
+    @ObservedObject var listUser = userList()
     var body: some View {
-        VStack {
-//            MapView()
-//                .ignoresSafeArea(.keyboard, edges: .top)
-//                .frame(height:300)
-            FormView()
-            
+        NavigationView {
+            List (listUser.users) {
+                Text($0.Name)
+            }
         }
-       
     }
 }
 

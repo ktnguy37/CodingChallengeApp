@@ -14,7 +14,7 @@ struct MapView: View {
     @State private var cancellable: AnyCancellable?
     private func setCurrentLocation() {
         cancellable = locationManager.$location.sink { (location) in
-            region = MKCoordinateRegion(center: location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 500, longitudinalMeters: 500)
+            region = MKCoordinateRegion(center: location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 700, longitudinalMeters: 700)
         }
     }
     var body: some View {

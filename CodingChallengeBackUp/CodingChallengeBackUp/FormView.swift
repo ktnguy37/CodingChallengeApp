@@ -6,35 +6,49 @@
 //
 
 import SwiftUI
+import iPhoneNumberField
 struct FormView: View {
-    @State private var name = ""
-    @State private var age = 0.0
-    @State private var gender = ""
-    @State private var zipCode = ""
-    @StateObject var user = UserModel()
+    @ObservedObject var user = UserModel()
+    @State var phoneEditing = false
+    init(){
+        UITableView.appearance().backgroundColor = .clear
+    }
     var body: some View {
         NavigationView {
             VStack{
                 Form {
-                    Text("Full Name")
-                    TextField("Your Name", text: $user.Name)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Text("Age \(Int(age))")
-                    Slider(value: $age, in: 0...100)
-                    Text("Zip Code")
-                    TextField("Zip Code", text: $user.ZipCode)
-                        //.keyboardType(.decimalPad)
-                    
+                    CameraButtonView()
+                        .offset(x:20)
+                    Group{
+                        Text("Restaurant/ Bistro")
+                        TextField("Enter Name", text: $user.Name)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        Text("Favorite Dish")
+                        TextField("Dish's Name", text: $user.dishName)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        Text("Phone Number")
+                        iPhoneNumberField("Phone Number", text: $user.phoneNumber, isEditing: $phoneEditing, formatted: true)
+                            .countryCodePlaceholderColor(Color.blue)
+                            .flagHidden(false)
+                            .maximumDigits(10)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        Text("Zip Code")
+                        TextField("Zip Code", text: $user.ZipCode)
+                            .keyboardType(.decimalPad)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                    }
                 }
+                .background(Color.blue)
                 NavigationLink(
-                    destination: ProfileView(),
+                    destination: ProfileView(user: user),
                     label: {
-                        Text("Update")
+                        Text("Create")
+                            .foregroundColor(.black)
                     })
             }
-            
-            .navigationBarTitle("Profile Survey")
-            
+            .navigationBarTitle("Foody Details")
+            .ignoresSafeArea(edges: .top)
         }
         
         
@@ -44,6 +58,6 @@ struct FormView: View {
 struct FormView_Previews: PreviewProvider {
     static var previews: some View {
         FormView()
-            
+    
     }
 }

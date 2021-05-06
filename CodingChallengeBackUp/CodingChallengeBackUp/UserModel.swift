@@ -6,18 +6,17 @@
 //
 
 import Foundation
-
+import UIKit.UIImage
 class UserModel: ObservableObject {
     
-    @Published var Name = ""
-    @Published var Age = 0
-    @Published var Gender = ""
-    @Published var ZipCode = ""
-    
-    func saveInfo(userName: String, age:Int,Sex:String,PostCode: String) {
-        Name = userName
-        Age = age
-        Gender = Sex
-        ZipCode = PostCode
+    @Published var Name : String
+    @Published var dishName : String
+    @Published var phoneNumber: String
+    @Published var ZipCode: String
+    init() {
+        self.Name = ""
+        self.dishName = ""
+        self.ZipCode = ""
+        self.phoneNumber = ""
     }
 }
