@@ -11,6 +11,8 @@
 		1B7D95C826101B10005E0235 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7D95C726101B10005E0235 /* iPhoneNumberField */; };
 		1B7D95D32612A2E9005E0235 /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */; };
 		1B9CD2AE2643E1FC00D277F2 /* userList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CD2AD2643E1FC00D277F2 /* userList.swift */; };
+		1B9CD2B22644D35A00D277F2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CD2B12644D35A00D277F2 /* ImagePicker.swift */; };
+		1B9CD2B42644D46300D277F2 /* listRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CD2B32644D46300D277F2 /* listRow.swift */; };
 		89E2728726073797001B6582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728626073797001B6582 /* AppDelegate.swift */; };
 		89E2728926073797001B6582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728826073797001B6582 /* SceneDelegate.swift */; };
 		89E2728E26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89E2728C26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld */; };
@@ -49,6 +51,8 @@
 		1B7D95C126101353005E0235 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButtonView.swift; sourceTree = "<group>"; };
 		1B9CD2AD2643E1FC00D277F2 /* userList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userList.swift; sourceTree = "<group>"; };
+		1B9CD2B12644D35A00D277F2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1B9CD2B32644D46300D277F2 /* listRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listRow.swift; sourceTree = "<group>"; };
 		89E2728326073797001B6582 /* CodingChallengeBackUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeBackUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E2728626073797001B6582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E2728826073797001B6582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9CD2AF2644D16F00D277F2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				89E272D426091C6F001B6582 /* MapView.swift */,
+				89E272E126091DBE001B6582 /* FormView.swift */,
+				89E272F1260A9174001B6582 /* ProfileView.swift */,
+				1B7D95C126101353005E0235 /* CircleImageView.swift */,
+				1B9CD2B32644D46300D277F2 /* listRow.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1B9CD2B02644D2F800D277F2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CD2AD2643E1FC00D277F2 /* userList.swift */,
+				89E272EC26097311001B6582 /* UserModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		89E2727A26073797001B6582 = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +146,7 @@
 		89E2728526073797001B6582 /* CodingChallengeBackUp */ = {
 			isa = PBXGroup;
 			children = (
-				1B9CD2AD2643E1FC00D277F2 /* userList.swift */,
+				1B9CD2B02644D2F800D277F2 /* model */,
 				89E2728626073797001B6582 /* AppDelegate.swift */,
 				89E2728826073797001B6582 /* SceneDelegate.swift */,
 				89E2728F26073799001B6582 /* Assets.xcassets */,
@@ -129,15 +154,12 @@
 				89E2729726073799001B6582 /* Info.plist */,
 				89E272DC26091CE4001B6582 /* ContentView.swift */,
 				89E2728C26073797001B6582 /* CodingChallengeBackUp.xcdatamodeld */,
-				89E2729126073799001B6582 /* Preview Content */,
 				89E272C1260737CF001B6582 /* MKCoordinate.swift */,
 				89E272C62607380D001B6582 /* LocationManager.swift */,
-				89E272D426091C6F001B6582 /* MapView.swift */,
-				89E272E126091DBE001B6582 /* FormView.swift */,
-				89E272EC26097311001B6582 /* UserModel.swift */,
-				89E272F1260A9174001B6582 /* ProfileView.swift */,
-				1B7D95C126101353005E0235 /* CircleImageView.swift */,
+				1B9CD2AF2644D16F00D277F2 /* views */,
 				1B7D95D22612A2E9005E0235 /* CameraButtonView.swift */,
+				89E2729126073799001B6582 /* Preview Content */,
+				1B9CD2B12644D35A00D277F2 /* ImagePicker.swift */,
 			);
 			path = CodingChallengeBackUp;
 			sourceTree = "<group>";
@@ -305,8 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E272E226091DBE001B6582 /* FormView.swift in Sources */,
+				1B9CD2B42644D46300D277F2 /* listRow.swift in Sources */,
 				89E272D526091C6F001B6582 /* MapView.swift in Sources */,
 				89E272F2260A9174001B6582 /* ProfileView.swift in Sources */,
+				1B9CD2B22644D35A00D277F2 /* ImagePicker.swift in Sources */,
 				89E2728726073797001B6582 /* AppDelegate.swift in Sources */,
 				89E272DD26091CE4001B6582 /* ContentView.swift in Sources */,
 				1B7D95C226101353005E0235 /* CircleImageView.swift in Sources */,

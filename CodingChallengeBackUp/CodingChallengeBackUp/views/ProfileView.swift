@@ -15,10 +15,16 @@ struct ProfileView: View {
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 450)
                 .offset(y:-120)
-
-            CircleImageView()
-                .offset(y: -220)
+            
+            Image(uiImage: user.foodImage)
+                .resizable()
+                .clipShape(Rectangle())
+                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .clipped()
+                .scaledToFill()
+                .offset(y: -190)
                 .padding(.bottom, -180)
+            
             VStack(alignment:.leading,spacing:20) {
                 HStack {
                     Image(systemName: "house.fill")
@@ -39,13 +45,12 @@ struct ProfileView: View {
                     Image(systemName: "location.circle.fill")
                     Text("Post code: " + user.ZipCode)
                 }
-               
+                
             }
             .font(.system(size: 23))
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             Spacer()
         }
-        .background(Color.blue)
         .ignoresSafeArea()
     }
 }
